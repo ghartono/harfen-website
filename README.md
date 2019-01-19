@@ -1,8 +1,11 @@
 v0.1 Initialize Website
 
 to-do:
+
 -Get API to load /projects
+
 -Admin Access
+
 -UI improvements
 
 
