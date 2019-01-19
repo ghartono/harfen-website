@@ -1,0 +1,98 @@
+
+.App .sc-gzVnrw{
+  display: none;
+  background-color: #f8f8f8;
+}
+
+.App .mobile-navbar{
+  display: none;
+}
+
+.App .navbar-brand {
+  font-weight: bold;
+}
+
+.App .lander {
+  text-align: center;
+  top:0;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.App .lander h1 {
+  font-family: "Noto Sans", sans-serif;
+  color: #0f0f0f;
+  font-weight: 700;
+}
+
+.App .lander p {
+  color: #999;
+}
+
+.App .logo {
+  margin-top: 15px;
+  width: 100%;
+  height: 80%;
+}
+
+.App .logo-mobile{
+  height: 100%;
+}
+
+.App .nav {
+  margin: 20px 0 0 0;
+  font-size: 20px;
+  font-family: "Noto Sans", sans-serif;
+  color: #333;
+}
+
+.App .nav a{
+  color: #999;
+  text-decoration: none;
+}
+
+.App .nav a:hover {
+  color: #333;
+}
+
+.App .nav ul{
+  list-style: none;
+  padding: 0 0 0 0;
+}
+
+.App .nav li{
+  margin: 0 0 10px 0;
+  font-family:"DIN Next Rounded LT W01 Light" !important;
+  font-size:20px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+
+@media only screen and (min-width: 1200px) {
+  .App .sc-gzVnrw{
+    display: block;
+    
+  }
+}
+
+@media (max-width: 1199.96px) {
+  .App .mobile-navbar {
+    display: block;
+  }
+}
+
+
+@media (min-width: 768px){
+  .App .logo-mobile {
+    height: 50px;
+  }
+}
+@media (max-width: 1199.96px) and (min-width:768px){
+  .App .page-header {
+    margin: 80px 0 0 0;
+  }
+}
