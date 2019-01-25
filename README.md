@@ -25,4 +25,4 @@ You will also see any lint errors in the console.
 
 *Please email me at gionaldoh@yahoo.com if you want to try out the app. I will send you the necessary file to fully run it.
 
-You can also try the website at http://d2d9dnteeao4y3.cloudfront.net/
+You can also try the website at https://harfen-design.com
