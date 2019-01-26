@@ -3,9 +3,7 @@
 .Project img{
    width:100%;
 }
-.Project .rot90{
-   transform: rotate(90deg);
-}
+
 
 .Project .mobile-view{
    display:none;
@@ -35,14 +33,9 @@
    .Project .row{
       padding: 0;
    }
-
-   .Project .rot90{
-      padding-top:48px;
-      padding-bottom:48px;
-   }
 }
 
-/*potrait view edits*/
+/*potrait view edits, not sure if necessary. Need android/ipad
 @media (min-width: 439px){
    .Project .rot90{
       padding-top:72px;
@@ -61,6 +54,7 @@
       padding-bottom: 128px;
    }
 }
+*/
 
 /*desktop*/
 @media (min-width:1025px){
@@ -70,5 +64,12 @@
    .Project .rot90{
       padding-top: 0px;
       padding-bottom: 0px;
+   }
+   .Project .rot90{
+      transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
    }
 }
