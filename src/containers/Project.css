@@ -23,7 +23,7 @@
 
 
 /*mobile*/
-@media (max-width:991.96px){
+@media (max-width:1024.96px){
 
    .Project .mobile-view{
       display: block;
@@ -32,15 +32,43 @@
       padding-top:8px;
       padding-bottom:8px;
    }
-
    .Project .row{
       padding: 0;
+   }
+
+   .Project .rot90{
+      padding-top:48px;
+      padding-bottom:48px;
+   }
+}
+
+/*potrait view edits*/
+@media (min-width: 439px){
+   .Project .rot90{
+      padding-top:72px;
+      padding-bottom:72px;
+   }
+}
+@media (min-width: 640px){
+   .Project .rot90{
+      padding-top:102px;
+      padding-bottom:102px;
+   }
+}
+@media (min-width: 950px){
+   .Project .rot90{
+      padding-top: 128px;
+      padding-bottom: 128px;
    }
 }
 
 /*desktop*/
-@media (min-width:992px){
+@media (min-width:1025px){
    .Project .desktop-view{
       display:block;
+   }
+   .Project .rot90{
+      padding-top: 0px;
+      padding-bottom: 0px;
    }
 }
