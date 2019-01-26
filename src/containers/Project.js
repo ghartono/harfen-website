@@ -8,8 +8,6 @@ import { Carousel } from 'react-responsive-carousel';
 var imageNum = 29;
 var landscape = [6, 9, 10, 11, 19, 22, 23, 25, 26, 29];
 
-
-
 export default class About extends Component {
    constructor(props) {
     super(props);
@@ -32,8 +30,6 @@ export default class About extends Component {
 
       return oImage;
    }
-
-
 
   render() {
     return (
