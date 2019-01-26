@@ -4,7 +4,6 @@ import "./Home.css";
 import { API } from "aws-amplify";
 import { LinkContainer } from "react-router-bootstrap";
 import { Grid, Row, Col } from 'react-flexbox-grid';
-import ModalImage from 'react-modal-image'
 
 export default class Home extends Component {
   constructor(props) {
@@ -68,72 +67,23 @@ export default class Home extends Component {
     );
   }
 
-  renderNothing() {
-   return;
-  }
-
-  renderNotes() {
+  generatePicture() {
     return (
-      <ListGroup>
-      {!this.state.isLoading && this.renderNotesList(this.state.notes)}
-    </ListGroup>
+      <img alt="img" className="photo" src="/design-4.png"></img>
     );
   }
 
   render() {
     return (
       <div className="Home">
-        <Grid fluid>
-        <Row>
-        <Col lg={11}>
-        <PageHeader>Projects</PageHeader>
-        <p>This page is under construction. Sorry for the inconvenience.</p>
-        <p>The plan for this page is to list and describe all the current and finished projects by Harfen Design & Architecture. </p>
+      <Grid fluid>
+      <Row>
+        <Col lgOffset={1} lg={11}>
+          {this.generatePicture()}
         </Col>
-        </Row>
-        </Grid>
-        <Grid fluid className="mobile-view">
-        <Row>
-        <Col lg={4}>
-           <img alt="img" class="photo" src="/design-1.png"></img>
-        </Col>
-        <Col lg={4}>
-            <img alt="img" class="photo" src="/design-2.png"></img>
-         </Col>
-         <Col lg={4}>
-            <img alt="img" class="photo" src="/design-3.png"></img>
-         </Col>
-        </Row>
-        <Row>
-        <Col lg={4}>
-           <img alt="img" class="photo" src="/design-4.png"></img>
-        </Col>
-        <Col lg={4}>
-            <img alt="img" class="photo" src="/design-5.png"></img>
-        </Col>
-        </Row>
-        </Grid>
-        <Grid fluid className="desktop-view">
-        <Row>
-        <Col lg={4}>
-           <ModalImage small={'/design-1.png'} large={'/design-1.png'} alt="Laksana Business Park Office living room" />
-        </Col>
-        <Col lg={4}>
-            <ModalImage small={'/design-2.png'} large={'/design-2.png'} alt="Laksana Business Park Office living room" />
-         </Col>
-         <Col lg={4}>
-            <ModalImage small={'/design-3.png'} large={'/design-3.png'} alt="Laksana Business Park Office living room" />
-         </Col>
-        </Row>
-        <Row>
-        <Col lgOffset={2} lg={4}>
-            <ModalImage small={'/design-4.png'} large={'/design-4.png'} alt="Laksana Business Park Office Meeting Room" />
-        </Col>
-        <Col lg={4}>
-            <ModalImage small={'/design-5.png'} large={'/design-5.png'} alt="Laksana Business Park Office Wine Rack" />
-        </Col>
-        </Row>
-        </Grid>
+      </Row>
+
+      </Grid>
       </div>
     );
   }

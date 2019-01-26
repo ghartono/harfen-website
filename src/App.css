@@ -62,7 +62,7 @@
 
 .App .nav li{
   margin: 0 0 10px 0;
-  font-family:"DIN Next Rounded LT W01 Light" !important;
+  font-family: 'Open Sans', sans-serif;
   font-size:20px;
   font-style:normal;
   -webkit-font-smoothing: antialiased;

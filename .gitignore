@@ -11,6 +11,15 @@
 # production
 /build
 
+# dev
+/src/containers/Home.js
+/src/containers/Home.css
+/src/containers/Home2.js
+/src/containers/NewNote.js
+/src/containers/NewNote.css
+/src/containers/Notes.css
+/src/containers/Notes.js
+
 # misc
 .DS_Store
 .env.local

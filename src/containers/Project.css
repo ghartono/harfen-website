@@ -1,0 +1,46 @@
+
+
+.Project img{
+   width:100%;
+}
+.Project .rot90{
+   transform: rotate(90deg);
+}
+
+.Project .mobile-view{
+   display:none;
+}
+
+.Project .desktop-view{
+   display:none;
+}
+
+.Project .row{
+   padding-top: 8px;
+   padding-bottom: 8px;
+}
+
+
+
+/*mobile*/
+@media (max-width:991.96px){
+
+   .Project .mobile-view{
+      display: block;
+   }
+   .Project .pics{
+      padding-top:8px;
+      padding-bottom:8px;
+   }
+
+   .Project .row{
+      padding: 0;
+   }
+}
+
+/*desktop*/
+@media (min-width:992px){
+   .Project .desktop-view{
+      display:block;
+   }
+}
