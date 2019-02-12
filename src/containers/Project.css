@@ -61,6 +61,12 @@
    .Project .desktop-view{
       display:block;
    }
+
+   .Project img {
+      max-height: 550px;
+      object-fit: contain;
+   }
+
    .Project .rot90{
       padding-top: 0px;
       padding-bottom: 0px;

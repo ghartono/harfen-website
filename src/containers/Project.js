@@ -25,7 +25,7 @@ export default class About extends Component {
          if(landscape.indexOf(i)===-1)
          { oImage.push(<div className="pics"><img alt="architect_design" src={"projects/design-"+i+".JPG"} /></div>) }
          else
-         { oImage.push(<div className="pics rot90"><img alt="architect_design" src={"projects/design-"+i+".JPG"} /></div>)}
+         { oImage.push(<div className="pics"><img alt="architect_design" src={"projects/design-"+i+".JPG"} /></div>)}
       }
 
       return oImage;
