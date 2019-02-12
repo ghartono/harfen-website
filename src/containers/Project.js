@@ -6,7 +6,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
 var imageNum = 29;
-var landscape = [6, 9, 10, 11, 19, 22, 23, 25, 26, 29];
+
 
 export default class About extends Component {
    constructor(props) {
@@ -22,10 +22,7 @@ export default class About extends Component {
 
       for(let i = 1; i <= imageNum; i++)
       {
-         if(landscape.indexOf(i)===-1)
-         { oImage.push(<div className="pics"><img alt="architect_design" src={"projects/design-"+i+".JPG"} /></div>) }
-         else
-         { oImage.push(<div className="pics"><img alt="architect_design" src={"projects/design-"+i+".JPG"} /></div>)}
+         oImage.push(<div className="pics"><img alt="architect_design" src={"projects/design-"+i+".JPG"} /></div>)
       }
 
       return oImage;
